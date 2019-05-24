@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        h2 {
+            color: white;
+            text-align: center;
+            background-color: violet;
+        }
+        
+        body {
+            margin: 0;
+        }
+        /* Style the header */
+        
+        .header {
+            background-color: #20B2AA;
+            padding: 20px;
+            text-align: center;
+            color: #2F4F4F;
+        }
+        /* Style the top navigation bar */
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Style the topnav links */
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: #00BFF;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* Change color on hover */
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Create three equal columns that floats next to each other */
+        
+        .column {
+            float: left;
+            width: 35%;
+            padding: 15px;
+            background-color: #20B2AA;
+        }
+        
+        .trum {
+            float: left;
+            width: 50%;
+            padding: 15px;
+            margin-left: 350px;
+        }
+        
+        .column1 {
+            float: left;
+            width: 65%;
+            padding: 15px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class=trum>
+        <div class="header">
+            <h1>Nguyễn Thị Oanh</h1>
+            <p>thông tin cá nhân</p>
+        </div>
+
+
+
+        <div class="row">
+            <div class="column">
+                <h2>liên lạc</h2>
+                <p> SDT: 0984075241</p>
+                <p> MAIL: nguyenthioank.8320@gmail.com</p>
+                <p>địa chỉ: 155 đường chiến thắng-hà đông </p>
+                <h2>ngôn ngữ</h2>
+                <p> tiếng việt 9/10</p>
+                <p>tiếng anh 1/10</p>
+                <h2>kỹ năng</h2>
+                <p>giao tiếp</p>
+                <p>tester</p>
+                <p>code c</p>
+            </div>
+
+
+            <div class="column1">
+                <h2>học vấn</h2>
+                <p>cấp 1:tiểu học hoằng thái</p>
+                <p>cấp 2:trung học cơ sở hoằng thái</p>
+                <p>cấp 3:trung học phổ thông hoằng hóa 4</p>
+
+
+
+                <h2>sở thích</h2>
+                <p>_nghe nhạc</p>
+                <p>hát nhưng chỉ mình nghe</p>
+
+            </div>
+        </div>
+        <div class="header">
+
+            <p>thông tin cá nhân</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
